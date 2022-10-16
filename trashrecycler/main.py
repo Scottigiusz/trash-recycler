@@ -47,5 +47,5 @@ imageholder1.grid(row=1, column=0)
 imageholder2 = Label(root, image=img)
 imageholder2.grid(row=1, column=1)
 
-recycler = torch.hub.load('ultralytics/yolov5', 'yolov5s')
+recycler = torch.hub.load('ultralytics/yolov5', 'custom', path='best.pt')
 root.mainloop()
